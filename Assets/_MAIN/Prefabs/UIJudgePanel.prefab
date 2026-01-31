@@ -60,7 +60,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 220, y: 100}
+  m_CellSize: {x: 400, y: 150}
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -120,6 +120,11 @@ MonoBehaviour:
   - {fileID: 5775050785377175705}
   - {fileID: 6313508800756484006}
   - {fileID: 3993621223542813249}
+  buttons:
+  - {fileID: 2161089927742346647}
+  - {fileID: 1122901925198610641}
+  - {fileID: 589502612501106670}
+  - {fileID: 7556039733023177225}
 --- !u!1001 &235072164326250161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +136,10 @@ PrefabInstance:
     - target: {fileID: 3307476301206263186, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
       propertyPath: m_Name
       value: Option
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687926674167286638, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+      propertyPath: m_fontSize
+      value: 41.95
       objectReference: {fileID: 0}
     - target: {fileID: 7746715797450279401, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
       propertyPath: m_Pivot.x
@@ -217,6 +226,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+--- !u!114 &2161089927742346647 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2215383119077196582, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+  m_PrefabInstance: {fileID: 235072164326250161}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &4777748127030336991 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4687926674167286638, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
@@ -245,6 +265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4687926674167286638, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+      propertyPath: m_fontSize
+      value: 41.95
+      objectReference: {fileID: 0}
     - target: {fileID: 7746715797450279401, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -330,6 +354,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+--- !u!114 &1122901925198610641 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2215383119077196582, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+  m_PrefabInstance: {fileID: 1237300705051444215}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &5775050785377175705 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4687926674167286638, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
@@ -358,6 +393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4687926674167286638, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+      propertyPath: m_fontSize
+      value: 41.95
+      objectReference: {fileID: 0}
     - target: {fileID: 7746715797450279401, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -443,6 +482,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+--- !u!114 &589502612501106670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2215383119077196582, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+  m_PrefabInstance: {fileID: 1626022345186823368}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &6313508800756484006 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4687926674167286638, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
@@ -470,6 +520,10 @@ PrefabInstance:
     - target: {fileID: 3307476301206263186, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
       propertyPath: m_Name
       value: Option (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687926674167286638, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+      propertyPath: m_fontSize
+      value: 41.95
       objectReference: {fileID: 0}
     - target: {fileID: 7746715797450279401, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
       propertyPath: m_Pivot.x
@@ -572,3 +626,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &7556039733023177225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2215383119077196582, guid: 1544ea27cf8eaed4aba21439efcfc7f6, type: 3}
+  m_PrefabInstance: {fileID: 8530641430554294575}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button

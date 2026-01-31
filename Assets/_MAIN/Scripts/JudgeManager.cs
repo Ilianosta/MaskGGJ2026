@@ -51,8 +51,17 @@ public class JudgeManager : MonoBehaviour
     {
         currentSuspectState++;
         currentCrimeQuestion++;
-        if (currentCrimeQuestion > CurrentCrime.crimeOptions.Length - 1) GameManager.instance.EndGame();
-        else CreateCrimeOptions();
+
+        if (currentCrimeQuestion > CurrentCrime.crimeOptions.Length - 1)
+        {
+            GameManager.instance.EndGame();
+            Debug.Log("END GAME");
+        }
+        else
+        {
+            CreateCrimeOptions();
+            Debug.Log("CONTINUE");
+        }
     }
 
     void OnReceiveCorrectAnswer()
