@@ -10,8 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject dialoguePanel;
     [SerializeField] TMP_Text dialogueTxt;
     [SerializeField] UI_BarFiller suspectBar;
-    [SerializeField] UI_BarFiller suspectTimerBar;
-    public Timer suspectTimer;
+    [SerializeField] Q_Vignette_Single vignette;
     public delegate void OnAnswerSelected(int index);
     public OnAnswerSelected onAnswerSelected;
 
@@ -28,13 +27,15 @@ public class UIManager : MonoBehaviour
         DialogueManager.onFinishDialogue += () => OpenJudgePanel();
     }
 
-    void Update()
-    {
-        if (!suspectTimer.IsWorking) return;
-        suspectTimerBar.SetCurrentValue(suspectTimer.CurrentTime / suspectTimer.MaxTime);
-    }
-
     public void ShowJudgePanel(CrimeOptions crime, Sprite suspect) => judgePanel.FillPanel(crime, suspect);
+
+    public void AnimateVignette()
+    {
+        LeanTween.value(0f, 2.5f, 0.2f).setEaseOutQuint().setLoopPingPong(1).setOnUpdate((float v) =>
+        {
+            vignette.mainScale = v;
+        });
+    }
 
     public void SetDialogueText(string txt)
     {

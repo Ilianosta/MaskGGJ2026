@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        UIManager.instance.suspectTimer.onTimerEnd += OnInterrogationTimeEnd;
         firstSceneTimer.onTimerEnd += OnFirstSceneTimerEnd;
     }
 
@@ -32,8 +31,9 @@ public class GameManager : MonoBehaviour
         Debug.Log("TIME OUT!");
     }
 
-    internal void EndGame()
+    public void EndGame()
     {
-        throw new NotImplementedException();
+        UIManager.instance.CloseJudgePanel();
+        Debug.Log("GAME OVER WACHO JAJAAAAA");
     }
 }

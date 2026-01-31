@@ -43,7 +43,7 @@ public class JudgeManager : MonoBehaviour
         if (option.correctPercentage > 0) OnReceiveCorrectAnswer();
         else OnReceiveWrongAnswer();
 
-        DialogueManager.instance.StartDialogue(option.answer);
+        if (option.answer.Length > 0) DialogueManager.instance.StartDialogue(option.answer);
         UIManager.instance.FillSuspectPercentage(option.correctPercentage);
     }
 
@@ -51,7 +51,7 @@ public class JudgeManager : MonoBehaviour
     {
         currentSuspectState++;
         currentCrimeQuestion++;
-        if (currentCrimeQuestion > CurrentCrime.crimeOptions.Length) GameManager.instance.EndGame();
+        if (currentCrimeQuestion > CurrentCrime.crimeOptions.Length - 1) GameManager.instance.EndGame();
         else CreateCrimeOptions();
     }
 
@@ -62,6 +62,7 @@ public class JudgeManager : MonoBehaviour
         LeanTween.cancel(gameObject);
         LeanTween.scaleX(imgSuspect, scale.x, durationX).setEase(ease).setLoopPingPong(1);
         LeanTween.scaleY(imgSuspect, scale.y, durationY).setEase(ease).setLoopPingPong(1);
+        UIManager.instance.AnimateVignette();
 
         GoNextQuestion();
         Debug.Log("CORRECTO");

@@ -23,9 +23,17 @@ public class DialogueManager : MonoBehaviour
         else DialogueManager.instance = this;
 
         DontDestroyOnLoad(gameObject);
+    }
 
-        inputActions = new InputSystem_Actions();
+    void OnEnable()
+    {
+        if (inputActions == null) inputActions = new InputSystem_Actions();
         inputActions.Enable();
+    }
+
+    void OnDisable()
+    {
+        inputActions.Disable();
     }
 
     [ContextMenu("Start dialogue")]
@@ -66,6 +74,7 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
         }
         onFinishDialogue?.Invoke();
+        ResetDialogue();
         UIManager.instance.CloseDialoguePanel();
     }
 
@@ -82,18 +91,24 @@ public class DialogueManager : MonoBehaviour
                 UIManager.instance.SetDialogueText(tempTxt);
                 if (!inputActions.Player.Attack.IsPressed())
                 {
-                    Debug.Log("Not skipping");
+                    // Debug.Log("Not skipping");
                     yield return new WaitForSeconds(timeAnimationChar);
                 }
                 else
                 {
-                    Debug.Log("Skipping");
+                    // Debug.Log("Skipping");
                 }
             }
 
             yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
         }
         onFinishDialogue?.Invoke();
+        ResetDialogue();
         UIManager.instance.CloseDialoguePanel();
+    }
+
+    void ResetDialogue()
+    {
+        UIManager.instance.SetDialogueText("");
     }
 }
