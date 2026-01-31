@@ -15,5 +15,5 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void ShowJudgePanel(CrimeOptions crimeOptions) => judgePanel.FillPanel(crimeOptions);
+    public void ShowJudgePanel(CrimeOptions crime, Sprite suspect) => judgePanel.FillPanel(crime, suspect);
 }

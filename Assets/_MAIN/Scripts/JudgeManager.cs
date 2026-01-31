@@ -17,7 +17,8 @@ public class JudgeManager : MonoBehaviour
     [ContextMenu("CreateCrimeOption")]
     public void CreateCrimeOptions()
     {
-        UIManager.instance.ShowJudgePanel(crimes[currentCrimeIndex].crimeOptions[currentCrimeQuestion]);
+        LevelData crime = crimes[currentCrimeIndex];
+        UIManager.instance.ShowJudgePanel(crime.crimeOptions[currentCrimeQuestion], crime.suspectImg);
     }
 
     public void ReceiveAnswer(int index)

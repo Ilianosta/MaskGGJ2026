@@ -4,10 +4,12 @@ using UnityEngine.UI;
 
 public class UI_JudgePanel : MonoBehaviour
 {
+    [SerializeField] Image suspectImg;
     [SerializeField] TMP_Text questionText;
     [SerializeField] TMP_Text[] options;
-    public void FillPanel(CrimeOptions crime)
+    public void FillPanel(CrimeOptions crime, Sprite suspect)
     {
+        if (suspect != null) suspectImg.sprite = suspect;
         questionText.text = crime.question;
         for (int i = 0; i < options.Length; i++)
         {

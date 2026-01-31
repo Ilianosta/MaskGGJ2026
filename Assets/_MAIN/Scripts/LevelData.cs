@@ -3,6 +3,7 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
     public Sprite crimeImg;
+    public Sprite suspectImg;
     public CrimeOptions[] crimeOptions;
 }
 
