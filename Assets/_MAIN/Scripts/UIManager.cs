@@ -3,7 +3,10 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
+    [SerializeField] UI_JudgePanel judgePanel;
 
+    public delegate void OnAnswerSelected(int index);
+    public OnAnswerSelected onAnswerSelected;
     void Awake()
     {
         if (UIManager.instance != null) Destroy(gameObject);
@@ -12,8 +15,5 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void ShowJudgePanel(CrimeOptions crimeOptions)
-    {
-
-    }
+    public void ShowJudgePanel(CrimeOptions crimeOptions) => judgePanel.FillPanel(crimeOptions);
 }
