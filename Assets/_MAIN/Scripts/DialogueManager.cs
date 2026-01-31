@@ -33,6 +33,7 @@ public class DialogueManager : MonoBehaviour
             {
                 tempTxt += text;
                 UIManager.instance.SetDialogueText(tempTxt);
+                AudioManager.instance.PlayBlipTextSound();
                 if (!inputActions.Player.Attack.IsPressed())
                 {
                     Debug.Log("Not skipping");

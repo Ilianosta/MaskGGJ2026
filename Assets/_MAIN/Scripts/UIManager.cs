@@ -43,6 +43,8 @@ public class UIManager : MonoBehaviour
         suspectImg.sprite = sprite;
     }
 
+    
+
     public void FillSuspectPercentage(float amount)
     {
         suspectBar.AddToCurrentAmount(amount / 100);
