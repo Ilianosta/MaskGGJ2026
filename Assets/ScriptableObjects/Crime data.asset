@@ -13,15 +13,71 @@ MonoBehaviour:
   m_Name: Crime data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   crimeImg: {fileID: 0}
-  suspectImg: {fileID: 0}
+  suspectImg:
+  - {fileID: -2416006779173323250, guid: 8d2a0b2de657a864bb0a7ce24089cfd2, type: 3}
+  - {fileID: -7457672271944875192, guid: 8a8e57d0fe799ea4ba5e2584d6f05efe, type: 3}
+  - {fileID: -1336571834542222041, guid: 2699fe928d341aa49a40f493edd947c8, type: 3}
+  - {fileID: 7192380071919715910, guid: 71401afb078bf9643bb1dd9cabb43e61, type: 3}
   crimeOptions:
-  - question: Who was?
-    options:
+  - options:
     - label: Incorrecto
       correctPercentage: 0
-    - label: Correcto!
+      answer: []
+    - label: "Mencionar los a\xF1os de prision que se le daran "
       correctPercentage: 25
+      answer:
+      - 'Yo le juro que cambie, ya no soy ladron, no desde que perdi mi pierna '
     - label: Incorrecto
       correctPercentage: 0
+      answer: []
     - label: Incorrecto
       correctPercentage: 0
+      answer: []
+  - options:
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+    - label: "Se\xF1alar que es zurdo y que el numero de personas zurdas con antecedentes
+        son pocas"
+      correctPercentage: 25
+      answer:
+      - 'Emm si bueno, se que todo suena conveniente, pero son solo coincidencias,
+        no puedo ser el unico ladron cojo en el mundo jeje '
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+  - options:
+    - label: "Se\xF1alar su pierna protesica lo molestara"
+      correctPercentage: 25
+      answer:
+      - 'Oigame, usted cree que puede llevarme aqui y empezar a decir eso bajo una
+        suposicion!? '
+      - 'Dios yo solo...eso no...no fue '
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+  - options:
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+    - label: Incorrecto
+      correctPercentage: 0
+      answer: []
+    - label: Mostrarle el papel con los numeros de la caja fuerte
+      correctPercentage: 25
+      answer:
+      - 'Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que si
+        no lo hacia llamaria a mi oficial de libertad condicional! no tuve as opcion
+        *solloza* '

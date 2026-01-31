@@ -3,14 +3,13 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
     public Sprite crimeImg;
-    public Sprite suspectImg;
+    public Sprite[] suspectImg;
     public CrimeOptions[] crimeOptions;
 }
 
 [System.Serializable]
 public class CrimeOptions
 {
-    public string question;
     public Option[] options = new Option[4];
 }
 
@@ -20,4 +19,5 @@ public class Option
 {
     public string label;
     public float correctPercentage;
+    public string[] answer;
 }

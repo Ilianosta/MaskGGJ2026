@@ -4,14 +4,26 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance;
     public List<DialogueData> dialogues = new List<DialogueData>();
 
     public float timeAnimationChar = 1;
     int currentDialogueIndex = 0;
-
     InputSystem_Actions inputActions;
+
+
+    public delegate void OnStartDialogue();
+    public static OnStartDialogue onStartDialogue;
+
+    public delegate void OnFinishDialogue();
+    public static OnFinishDialogue onFinishDialogue;
     void Awake()
     {
+        if (DialogueManager.instance != null) Destroy(gameObject);
+        else DialogueManager.instance = this;
+
+        DontDestroyOnLoad(gameObject);
+
         inputActions = new InputSystem_Actions();
         inputActions.Enable();
     }
@@ -20,6 +32,13 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue()
     {
         StartCoroutine(StartDialogueAnimation(dialogues[currentDialogueIndex]));
+        onStartDialogue?.Invoke();
+    }
+
+    public void StartDialogue(string[] dialogues)
+    {
+        StartCoroutine(StartDialogueAnimation(dialogues));
+        onStartDialogue?.Invoke();
     }
 
     IEnumerator StartDialogueAnimation(DialogueData dialogueData)
@@ -33,7 +52,6 @@ public class DialogueManager : MonoBehaviour
             {
                 tempTxt += text;
                 UIManager.instance.SetDialogueText(tempTxt);
-                AudioManager.instance.PlayBlipTextSound();
                 if (!inputActions.Player.Attack.IsPressed())
                 {
                     Debug.Log("Not skipping");
@@ -47,7 +65,35 @@ public class DialogueManager : MonoBehaviour
 
             yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
         }
+        onFinishDialogue?.Invoke();
         UIManager.instance.CloseDialoguePanel();
-        yield return null;
+    }
+
+    IEnumerator StartDialogueAnimation(string[] dialogues)
+    {
+        UIManager.instance.OpenDialoguePanel();
+        foreach (string dialogue in dialogues)
+        {
+            yield return new WaitForSeconds(.3f);
+            string tempTxt = "";
+            foreach (char text in dialogue)
+            {
+                tempTxt += text;
+                UIManager.instance.SetDialogueText(tempTxt);
+                if (!inputActions.Player.Attack.IsPressed())
+                {
+                    Debug.Log("Not skipping");
+                    yield return new WaitForSeconds(timeAnimationChar);
+                }
+                else
+                {
+                    Debug.Log("Skipping");
+                }
+            }
+
+            yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
+        }
+        onFinishDialogue?.Invoke();
+        UIManager.instance.CloseDialoguePanel();
     }
 }

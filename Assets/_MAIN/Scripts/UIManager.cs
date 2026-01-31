@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     public Timer suspectTimer;
     public delegate void OnAnswerSelected(int index);
     public OnAnswerSelected onAnswerSelected;
+
     void Awake()
     {
         if (UIManager.instance != null) Destroy(gameObject);
@@ -22,6 +23,9 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         suspectBar.SetCurrentValue(0);
+
+        DialogueManager.onStartDialogue += () => CloseJudgePanel();
+        DialogueManager.onFinishDialogue += () => OpenJudgePanel();
     }
 
     void Update()
@@ -50,5 +54,15 @@ public class UIManager : MonoBehaviour
     public void CloseDialoguePanel()
     {
         dialoguePanel.SetActive(false);
+    }
+
+    public void OpenJudgePanel()
+    {
+        judgePanel.gameObject.SetActive(true);
+    }
+
+    public void CloseJudgePanel()
+    {
+        judgePanel.gameObject.SetActive(false);
     }
 }

@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [SerializeField] GameObject firstScene, paper;
+    [SerializeField] GameObject firstScene, interrogatory;
     public Timer firstSceneTimer;
     void Awake()
     {
@@ -23,11 +23,17 @@ public class GameManager : MonoBehaviour
 
     private void OnFirstSceneTimerEnd()
     {
-        
+        firstScene.SetActive(false);
+        interrogatory.SetActive(true);
     }
 
     void OnInterrogationTimeEnd()
     {
         Debug.Log("TIME OUT!");
+    }
+
+    internal void EndGame()
+    {
+        throw new NotImplementedException();
     }
 }

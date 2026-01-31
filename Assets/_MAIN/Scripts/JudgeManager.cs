@@ -7,6 +7,7 @@ public class JudgeManager : MonoBehaviour
     public LevelData[] crimes;
     [SerializeField] private int currentCrimeIndex = 0;
     [SerializeField] private int currentCrimeQuestion = 0;
+    int currentSuspectState = 0;
 
     [Header("Animations")]
     [SerializeField] GameObject imgSuspect;
@@ -16,6 +17,7 @@ public class JudgeManager : MonoBehaviour
     [SerializeField] Vector2 scale;
     [SerializeField] CameraShake2D cameraShake2D;
     [SerializeField] UIShake uIShake;
+
     // HELPERS
     LevelData CurrentCrime => crimes[currentCrimeIndex];
     CrimeOptions CurrentCrimeOptions => CurrentCrime.crimeOptions[currentCrimeQuestion];
@@ -31,28 +33,45 @@ public class JudgeManager : MonoBehaviour
     public void CreateCrimeOptions()
     {
         LevelData crime = crimes[currentCrimeIndex];
-        UIManager.instance.ShowJudgePanel(crime.crimeOptions[currentCrimeQuestion], crime.suspectImg);
+        UIManager.instance.ShowJudgePanel(crime.crimeOptions[currentCrimeQuestion], crime.suspectImg[currentSuspectState]);
     }
 
     public void ReceiveAnswer(int index)
     {
-        if (CurrentCrimeOptions.options[index].correctPercentage > 0) OnReceiveCorrectAnswer();
+        Option option = CurrentCrimeOptions.options[index];
+        Debug.Log("Option correct percentage: " + option.correctPercentage);
+        if (option.correctPercentage > 0) OnReceiveCorrectAnswer();
         else OnReceiveWrongAnswer();
-        
-        UIManager.instance.FillSuspectPercentage(CurrentCrimeOptions.options[index].correctPercentage);
+
+        DialogueManager.instance.StartDialogue(option.answer);
+        UIManager.instance.FillSuspectPercentage(option.correctPercentage);
+    }
+
+    void GoNextQuestion()
+    {
+        currentSuspectState++;
+        currentCrimeQuestion++;
+        if (currentCrimeQuestion > CurrentCrime.crimeOptions.Length) GameManager.instance.EndGame();
+        else CreateCrimeOptions();
     }
 
     void OnReceiveCorrectAnswer()
     {
         cameraShake2D.Shake();
         uIShake.Shake();
+        LeanTween.cancel(gameObject);
         LeanTween.scaleX(imgSuspect, scale.x, durationX).setEase(ease).setLoopPingPong(1);
         LeanTween.scaleY(imgSuspect, scale.y, durationY).setEase(ease).setLoopPingPong(1);
+
+        GoNextQuestion();
+        Debug.Log("CORRECTO");
     }
     [ContextMenu("AnimWrongAnswer")]
-     void OnReceiveWrongAnswer()
+    void OnReceiveWrongAnswer()
     {
-        LeanTween.scale(imgSuspect,scale * 1.15f,2).setEase(curveAnimWrongAnswer);
+        LeanTween.cancel(gameObject);
+        LeanTween.scale(imgSuspect, scale * 1.15f, 2).setEase(curveAnimWrongAnswer);
+        Debug.Log("INCORRECTO");
     }
 
 }
