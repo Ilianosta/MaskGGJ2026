@@ -13,24 +13,15 @@ MonoBehaviour:
   m_Name: Crime data
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   crimeImg: {fileID: 0}
+  suspectImg: {fileID: 0}
   crimeOptions:
   - question: Who was?
     options:
-    - label: Feche
-      correctPercentage: 1
-    - label: Feche 2
-      correctPercentage: 25
-    - label: Feche pero zinne
-      correctPercentage: 15
-    - label: Foche
-      correctPercentage: 100
-  - question: Is this a pito
-    options:
-    - label: si
-      correctPercentage: 98
-    - label: no
+    - label: Incorrecto
       correctPercentage: 0
-    - label: un monton
-      correctPercentage: 15
-    - label: pito
-      correctPercentage: 100
+    - label: Correcto!
+      correctPercentage: 25
+    - label: Incorrecto
+      correctPercentage: 0
+    - label: Incorrecto
+      correctPercentage: 0

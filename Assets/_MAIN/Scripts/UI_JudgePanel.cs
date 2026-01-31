@@ -4,13 +4,13 @@ using UnityEngine.UI;
 
 public class UI_JudgePanel : MonoBehaviour
 {
-    [SerializeField] Image suspectImg;
+    [SerializeField] SpriteRenderer suspectImg;
     [SerializeField] TMP_Text questionText;
     [SerializeField] TMP_Text[] options;
     public void FillPanel(CrimeOptions crime, Sprite suspect)
     {
         if (suspect != null) suspectImg.sprite = suspect;
-        questionText.text = crime.question;
+        //questionText.text = crime.question;
         for (int i = 0; i < options.Length; i++)
         {
             options[i].text = crime.options[i].label;
@@ -20,7 +20,7 @@ public class UI_JudgePanel : MonoBehaviour
 
             optionsButton.onClick.AddListener(() =>
             {
-                Debug.Log("Clicking btn: " + actualIndex);
+                // Debug.Log("Clicking btn: " + actualIndex);
                 UIManager.instance.onAnswerSelected?.Invoke(actualIndex);
             });
         }

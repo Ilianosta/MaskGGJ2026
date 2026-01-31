@@ -10,7 +10,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject dialoguePanel;
     [SerializeField] TMP_Text dialogueTxt;
     [SerializeField] UI_BarFiller suspectBar;
-    [SerializeField] Image suspectImg;
     [SerializeField] UI_BarFiller suspectTimerBar;
     public Timer suspectTimer;
     public delegate void OnAnswerSelected(int index);
@@ -37,13 +36,6 @@ public class UIManager : MonoBehaviour
     {
         dialogueTxt.text = txt;
     }
-
-    public void UpdateSuspectImg(Sprite sprite)
-    {
-        suspectImg.sprite = sprite;
-    }
-
-    
 
     public void FillSuspectPercentage(float amount)
     {

@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    [SerializeField] GameObject firstScene, paper;
+    public Timer firstSceneTimer;
     void Awake()
     {
         if (GameManager.instance != null) Destroy(gameObject);
@@ -14,11 +17,17 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        UIManager.instance.suspectTimer.onTimerEnd += OnTimerEnd;
+        UIManager.instance.suspectTimer.onTimerEnd += OnInterrogationTimeEnd;
+        firstSceneTimer.onTimerEnd += OnFirstSceneTimerEnd;
     }
 
-    void OnTimerEnd()
+    private void OnFirstSceneTimerEnd()
     {
-        Debug.Log("TIME OUT!");   
+        
+    }
+
+    void OnInterrogationTimeEnd()
+    {
+        Debug.Log("TIME OUT!");
     }
 }
