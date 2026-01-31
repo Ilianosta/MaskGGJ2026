@@ -1,12 +1,16 @@
+using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
     [SerializeField] UI_JudgePanel judgePanel;
+    [SerializeField] GameObject dialoguePanel;
     [SerializeField] TMP_Text dialogueTxt;
     [SerializeField] UI_BarFiller suspectBar;
+    [SerializeField] Image suspectImg;
     public delegate void OnAnswerSelected(int index);
     public OnAnswerSelected onAnswerSelected;
     void Awake()
@@ -26,8 +30,23 @@ public class UIManager : MonoBehaviour
         dialogueTxt.text = txt;
     }
 
+    public void UpdateSuspectImg(Sprite sprite)
+    {
+        suspectImg.sprite = sprite;
+    }
+
     public void FillSuspectPercentage(float amount)
     {
         suspectBar.AddToCurrentAmount(amount / 100);
+    }
+
+    public void OpenDialoguePanel()
+    {
+        dialoguePanel.SetActive(true);
+    }
+
+    public void CloseDialoguePanel()
+    {
+        dialoguePanel.SetActive(false);
     }
 }
