@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] TMP_Text dialogueTxt;
     [SerializeField] UI_BarFiller suspectBar;
     [SerializeField] Image suspectImg;
+    [SerializeField] UI_BarFiller suspectTimerBar;
+    public Timer suspectTimer;
     public delegate void OnAnswerSelected(int index);
     public OnAnswerSelected onAnswerSelected;
     void Awake()
@@ -21,6 +23,12 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         suspectBar.SetCurrentValue(0);
+    }
+
+    void Update()
+    {
+        if (!suspectTimer.IsWorking) return;
+        suspectTimerBar.SetCurrentValue(suspectTimer.CurrentTime / suspectTimer.MaxTime);
     }
 
     public void ShowJudgePanel(CrimeOptions crime, Sprite suspect) => judgePanel.FillPanel(crime, suspect);

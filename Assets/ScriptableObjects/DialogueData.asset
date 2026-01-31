@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: DialogueData
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogues:
-  - Hola buenas tardes
-  - Todos putos
+  - 'H-Hola detective, perdon estoy algo nervioso, uno pensaria que al ser arrestado
+    con anterioridad se acostumbra pero no '
+  - 'Yo le juro que cambie, ya no soy ladron, no desde que perdi mi pierna '
+  - Emm si bueno, se que todo suena conveniente, pero son solo coincidencias, no
+    puedo ser el unico ladron cojo en el mundo jeje
+  - Oigame, usted cree que puede llevarme aqui y empezar a decir eso bajo una suposicion!?
+  - Dios yo solo...eso no...no fue
+  - 'Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que si no lo
+    hacia llamaria a mi oficial de libertad condicional! no tuve as opcion *solloza* '
