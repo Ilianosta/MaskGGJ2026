@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: -7457672271944875192, guid: 8a8e57d0fe799ea4ba5e2584d6f05efe, type: 3}
   - {fileID: -1336571834542222041, guid: 2699fe928d341aa49a40f493edd947c8, type: 3}
   - {fileID: 7192380071919715910, guid: 71401afb078bf9643bb1dd9cabb43e61, type: 3}
+  - {fileID: -5578726971903278175, guid: c409306f3870ab3428b54c63d0860c42, type: 3}
   crimeOptions:
   - options:
     - label: Cuando va a salir Half Life 3?
@@ -90,5 +91,6 @@ MonoBehaviour:
     - label: Mostrarle el papel con los numeros de la caja fuerte
       correctPercentage: 25
       answer:
-      - Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que si no
-        lo hacia llamaria a mi oficial de libertad condicional! no tuve as opcion.
+      - '                                                                                       
+        Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que si no
+        lo hacia llamaria a mi oficial de libertad condicional! no tuve as opcion.'

@@ -12,6 +12,10 @@ public class ChoiceDetector : MonoBehaviour
     [SerializeField] private float timerChoiceTotal;
     [SerializeField] private float timerCurrentTime;
 
+    private void Awake()
+    {
+    }
+
     private void Update()
     {
         Rect rectA = GetWorldRect(selector);

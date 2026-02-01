@@ -851,3 +851,736 @@ Received Import Request.
 Start importing Assets/ScriptableObjects/Crime data.asset using Guid(da0f844c304c87d4a89bb5b81c3d585e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '387a97b57cfb3dcf0be1bb6ee9df90d1') in 0.1047287 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
+========================================================================
+Received Import Request.
+  Time since last request: 670.632844 seconds.
+  path: Assets/_MAIN/Scripts/BotonPlay.cs
+  artifactKey: Guid(003e333414937964e8de21bf69a51508) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_MAIN/Scripts/BotonPlay.cs using Guid(003e333414937964e8de21bf69a51508) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c25a2308a4d535eb649c1f3740c2b38') in 1.6756217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000927 seconds.
+  path: Assets/_MAIN/Scripts/GameManager.cs
+  artifactKey: Guid(5f572bca220e6f14bbc09b840d86f96f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_MAIN/Scripts/GameManager.cs using Guid(5f572bca220e6f14bbc09b840d86f96f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffcdfc9461fb059c165a6e01763836db') in 0.0309942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.47 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7330 unused Assets / (2.6 MB). Loaded Objects now: 8210.
+Memory consumption went from 154.9 MB to 152.3 MB.
+Total: 248.197600 ms (FindLiveObjects: 5.915200 ms CreateObjectMapping: 1.358500 ms MarkObjects: 233.956200 ms  DeleteObjects: 6.964500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 55.431575 seconds.
+  path: Assets/_MAIN/Scripts/AudioManager.cs
+  artifactKey: Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_MAIN/Scripts/AudioManager.cs using Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8cb89d54f1418e2a8a5a0c4045a1b82') in 0.0368496 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084686 seconds.
+  path: Assets/_MAIN/Scripts/AudioManager.cs
+  artifactKey: Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MAIN/Scripts/AudioManager.cs using Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cd4a5dcb5420ae216919474cf4794e4') in 0.0024294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  4.313 seconds
+Refreshing native plugins compatible for Editor in 7.55 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.636 seconds
+Domain Reload Profiling: 5974ms
+	BeginReloadAssembly (2103ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (337ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (6ms)
+		CreateAndSetChildDomain (874ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (2050ms)
+		LoadAssemblies (1601ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (785ms)
+			TypeCache.Refresh (120ms)
+				TypeCache.ScanAssembly (19ms)
+			BuildScriptInfoCaches (588ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1636ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1317ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (303ms)
+			ProcessInitializeOnLoadAttributes (770ms)
+			ProcessInitializeOnLoadMethodAttributes (225ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 3.76 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7346 unused Assets / (4.5 MB). Loaded Objects now: 8213.
+Memory consumption went from 154.8 MB to 150.3 MB.
+Total: 21.315900 ms (FindLiveObjects: 1.803900 ms CreateObjectMapping: 1.153000 ms MarkObjects: 13.969900 ms  DeleteObjects: 4.110000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 36.665914 seconds.
+  path: Assets/_MAIN/Scripts/AudioManager.cs
+  artifactKey: Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MAIN/Scripts/AudioManager.cs using Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3a10dcf20db508b115daee338c0fea2') in 0.0174588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7330 unused Assets / (4.7 MB). Loaded Objects now: 8213.
+Memory consumption went from 154.9 MB to 150.2 MB.
+Total: 30.693300 ms (FindLiveObjects: 2.778600 ms CreateObjectMapping: 1.713700 ms MarkObjects: 20.622400 ms  DeleteObjects: 5.575800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 264.860385 seconds.
+  path: Assets/_MAIN/Scripts/AudioManager.cs
+  artifactKey: Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MAIN/Scripts/AudioManager.cs using Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05c0a06cef57caf35c5b912bc1c5f48c') in 0.0094882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  7.997 seconds
+Refreshing native plugins compatible for Editor in 9.43 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.134 seconds
+Domain Reload Profiling: 14165ms
+	BeginReloadAssembly (3091ms)
+		ExecutionOrderSort (3ms)
+		DisableScriptedObjects (493ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (7ms)
+		CreateAndSetChildDomain (1083ms)
+	RebuildCommonClasses (281ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (111ms)
+	LoadAllAssembliesAndSetupDomain (4519ms)
+		LoadAssemblies (4347ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (987ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (18ms)
+			BuildScriptInfoCaches (755ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (6136ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5682ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (18ms)
+			BeforeProcessingInitializeOnLoad (3048ms)
+			ProcessInitializeOnLoadAttributes (2169ms)
+			ProcessInitializeOnLoadMethodAttributes (423ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (1ms)
+		AwakeInstancesAfterBackupRestoration (48ms)
+Refreshing native plugins compatible for Editor in 124.69 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7346 unused Assets / (2.2 MB). Loaded Objects now: 8216.
+Memory consumption went from 154.8 MB to 152.6 MB.
+Total: 519.615900 ms (FindLiveObjects: 98.796500 ms CreateObjectMapping: 7.229700 ms MarkObjects: 389.861600 ms  DeleteObjects: 21.486400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7330 unused Assets / (4.9 MB). Loaded Objects now: 8216.
+Memory consumption went from 154.9 MB to 150.0 MB.
+Total: 23.594800 ms (FindLiveObjects: 3.018200 ms CreateObjectMapping: 1.360700 ms MarkObjects: 11.578700 ms  DeleteObjects: 7.634600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.343 seconds
+Refreshing native plugins compatible for Editor in 7.71 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.933 seconds
+Domain Reload Profiling: 6276ms
+	BeginReloadAssembly (2004ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (925ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (493ms)
+	RebuildCommonClasses (102ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (158ms)
+	LoadAllAssembliesAndSetupDomain (2041ms)
+		LoadAssemblies (1698ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (705ms)
+			TypeCache.Refresh (71ms)
+				TypeCache.ScanAssembly (20ms)
+			BuildScriptInfoCaches (567ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (1935ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1533ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (399ms)
+			ProcessInitializeOnLoadAttributes (895ms)
+			ProcessInitializeOnLoadMethodAttributes (215ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Refreshing native plugins compatible for Editor in 5.59 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7346 unused Assets / (4.9 MB). Loaded Objects now: 8219.
+Memory consumption went from 154.9 MB to 150.0 MB.
+Total: 23.011900 ms (FindLiveObjects: 2.914500 ms CreateObjectMapping: 1.637800 ms MarkObjects: 12.435900 ms  DeleteObjects: 6.016500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 231.931693 seconds.
+  path: Assets/_MAIN/Scripts/AudioManager.cs
+  artifactKey: Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MAIN/Scripts/AudioManager.cs using Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f14110f7fe8e8a1d5b4c9262d3b6ee9') in 0.0226267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 117.960563 seconds.
+  path: Assets/_MAIN/Scripts/AudioManager.cs
+  artifactKey: Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_MAIN/Scripts/AudioManager.cs using Guid(57ee63bded0f72a4cbf35e05ba5c92a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6962ae523a037f3fb984e68fc26b4acc') in 0.4142325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.419321 seconds.
+  path: Assets/UI Soundpack
+  artifactKey: Guid(3ec2eb8e9d0d4fe469322ca74592a3ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack using Guid(3ec2eb8e9d0d4fe469322ca74592a3ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6819a48cd44a093cc5f303724f794364') in 0.0680956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/UI Soundpack/MP3/Retro2.mp3
+  artifactKey: Guid(47880cece84a62e4d86f8537613853ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Retro2.mp3 using Guid(47880cece84a62e4d86f8537613853ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b1bcd3888e22f41eabccdfb1a7aaa30') in 0.274543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI Soundpack/MP3/Retro1.mp3
+  artifactKey: Guid(54d92a4271a65af49ae136e0448e1116) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Retro1.mp3 using Guid(54d92a4271a65af49ae136e0448e1116) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f837f0094a4e7f27b6b33e4390d50605') in 0.0761918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI Soundpack/WAV/Wood Block2.wav
+  artifactKey: Guid(df60351d9c281ba4aaa683bb517d7bbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Wood Block2.wav using Guid(df60351d9c281ba4aaa683bb517d7bbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2991d88177e01d2853294b8fcbe5f05d') in 0.0724149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/UI Soundpack/MP3/Minimalist13.mp3
+  artifactKey: Guid(0f216458fd84f1e45b03ab56e6f18c51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Minimalist13.mp3 using Guid(0f216458fd84f1e45b03ab56e6f18c51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2220c54e425c99325539b640cfd073b4') in 0.05701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI Soundpack/WAV
+  artifactKey: Guid(ce8643dd58ddaf84d9efc10734f63b65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV using Guid(ce8643dd58ddaf84d9efc10734f63b65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e50c557f5bc636901d8d406f52236723') in 0.0224076 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI Soundpack/MP3/Minimalist9.mp3
+  artifactKey: Guid(3503a27e5a3a2f04fa5a04b903889ff5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Minimalist9.mp3 using Guid(3503a27e5a3a2f04fa5a04b903889ff5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f5351d30448d6caf17c3b22c049b59a') in 0.0602511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/UI Soundpack/WAV/Retro3.wav
+  artifactKey: Guid(eba645b0abc44994a94c668f78300c7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Retro3.wav using Guid(eba645b0abc44994a94c668f78300c7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '490b34b878d676c702bf921719f94ad3') in 0.069964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/UI Soundpack/WAV/Modern12.wav
+  artifactKey: Guid(9883101962e28644c880a8f8763d9896) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern12.wav using Guid(9883101962e28644c880a8f8763d9896) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7ea4d90d1e62ba550f5c30049f25f07') in 0.0665282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/UI Soundpack/MP3/Minimalist1.mp3
+  artifactKey: Guid(6b211cd82de849e4b9a82e8f93c20a55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Minimalist1.mp3 using Guid(6b211cd82de849e4b9a82e8f93c20a55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4966f4e6b2e051e9cc7f5fccf7db5fd8') in 0.0651455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/UI Soundpack/MP3/African3.mp3
+  artifactKey: Guid(43c2e24f347561d4cb2a399e5468283f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/African3.mp3 using Guid(43c2e24f347561d4cb2a399e5468283f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a65ef36f3a56f0935678a2ebdb7a6b70') in 0.0728653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI Soundpack/WAV/Abstract1.wav
+  artifactKey: Guid(c5230b845c1250e4fb641b743c1cbac7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Abstract1.wav using Guid(c5230b845c1250e4fb641b743c1cbac7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5fcedfb016438aaf3e4ffda5350d55d') in 0.0684897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI Soundpack/WAV/Minimalist11.wav
+  artifactKey: Guid(77027ac297ec57a429c71143d707b166) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Minimalist11.wav using Guid(77027ac297ec57a429c71143d707b166) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9ccb5d89794aac6b181d9fd4d49232ea') in 0.0952438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/UI Soundpack/MP3/African2.mp3
+  artifactKey: Guid(1aa87e22c2424d3408a8d3195f2cb3da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/African2.mp3 using Guid(1aa87e22c2424d3408a8d3195f2cb3da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd7378d69816b3cadbc7d9bfd8b6ccbd0') in 0.1173425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/UI Soundpack/WAV/Modern4.wav
+  artifactKey: Guid(b5c95b143d4cc954abd3d585e174c3c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern4.wav using Guid(b5c95b143d4cc954abd3d585e174c3c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '482de3b965ca7d8455a94674f84c68d9') in 0.0660208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/UI Soundpack/WAV/Minimalist2.wav
+  artifactKey: Guid(deff2fb538f3b7a44aa556210c060408) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Minimalist2.wav using Guid(deff2fb538f3b7a44aa556210c060408) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '973287802bb2c9f82cdb02a810feb009') in 0.0673123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/UI Soundpack/MP3/Coffee2.mp3
+  artifactKey: Guid(65e31025d792eaf4c9bcb7378c619993) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Coffee2.mp3 using Guid(65e31025d792eaf4c9bcb7378c619993) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '291d0db235e02ca6fd9c1fb388e46e89') in 0.1233714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI Soundpack/MP3/Abstract1.mp3
+  artifactKey: Guid(5d58cc7e4c716e34d8c74b56a58904f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Abstract1.mp3 using Guid(5d58cc7e4c716e34d8c74b56a58904f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e4fe8dadaa3b366caf4b6997c6ca644') in 0.0607465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UI Soundpack/WAV/Modern14.wav
+  artifactKey: Guid(45afde4484e791a42a847e0b770d74ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern14.wav using Guid(45afde4484e791a42a847e0b770d74ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57f2ffe9505fb6df68ed7635f9b26008') in 0.0615498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/UI Soundpack/MP3/Modern4.mp3
+  artifactKey: Guid(46c7c15357fa4474287da677828a3688) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern4.mp3 using Guid(46c7c15357fa4474287da677828a3688) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aebe80a2c2fda29b5661ddfe69c81520') in 0.0572116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI Soundpack/WAV/Abstract2.wav
+  artifactKey: Guid(3b6ea49b05504154c9137c02a84d112e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Abstract2.wav using Guid(3b6ea49b05504154c9137c02a84d112e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '838654720db13db48e394b1c00d84499') in 0.0598651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI Soundpack/WAV/Retro12.wav
+  artifactKey: Guid(30c90310a5283d845b83b1966a58999c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Retro12.wav using Guid(30c90310a5283d845b83b1966a58999c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7384728acf7d3d1c84431a7031b33147') in 0.0439271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI Soundpack/MP3/Retro5.mp3
+  artifactKey: Guid(997cbcea68fab404e8f652b4815e7423) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Retro5.mp3 using Guid(997cbcea68fab404e8f652b4815e7423) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2eced3f80f7dc6bb0fda3f5a0992117a') in 0.065931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UI Soundpack/MP3/Modern13.mp3
+  artifactKey: Guid(afbf66e1b5a2a6d42b9afab65c5de815) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern13.mp3 using Guid(afbf66e1b5a2a6d42b9afab65c5de815) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a07be894302a896ce01ab032a65e5b45') in 0.0646002 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/UI Soundpack/WAV/Retro8.wav
+  artifactKey: Guid(9d55ffb5b93b7814c9fca5bd08455bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Retro8.wav using Guid(9d55ffb5b93b7814c9fca5bd08455bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bcf201be5e30e944e2b65e8bf4238087') in 0.0774458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI Soundpack/MP3/Modern5.mp3
+  artifactKey: Guid(594c88005ae39ab4c813e3c09a5c3f22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern5.mp3 using Guid(594c88005ae39ab4c813e3c09a5c3f22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2746ee31940494eded189064b8758b80') in 0.0645426 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI Soundpack/WAV/Minimalist4.wav
+  artifactKey: Guid(4f6cb2ed239ca5341b8943726153f0c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Minimalist4.wav using Guid(4f6cb2ed239ca5341b8943726153f0c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4dfd57ee3a163eb02f2d8620b19a8e9b') in 0.051215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/UI Soundpack/WAV/Retro7.wav
+  artifactKey: Guid(44bba2c37c53c6e47a4bbdab73f7ddd0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Retro7.wav using Guid(44bba2c37c53c6e47a4bbdab73f7ddd0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2820c37d28fe59bbd14b0ebe33bb99ae') in 0.0508375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/UI Soundpack/WAV/African2.wav
+  artifactKey: Guid(a9bbb5f9c7fc50c4da584cf2dc49b32a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/African2.wav using Guid(a9bbb5f9c7fc50c4da584cf2dc49b32a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de1f1f74b9b8b6ba3f198ddb19ce465e') in 0.0532728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI Soundpack/MP3/Retro10.mp3
+  artifactKey: Guid(a364c3c29a7ec4848a5d1d358324ef42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Retro10.mp3 using Guid(a364c3c29a7ec4848a5d1d358324ef42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e73b07054ca5f98656f1bdc8911e33bd') in 0.0502967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI Soundpack/WAV/Modern5.wav
+  artifactKey: Guid(9de7d988e4f1d86458b4fd01059111b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern5.wav using Guid(9de7d988e4f1d86458b4fd01059111b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '737290ea2b23421f9b1628199f900819') in 0.0707865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI Soundpack/MP3/Modern1.mp3
+  artifactKey: Guid(afbe78ae55d82ca4bb97dd9196cede70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern1.mp3 using Guid(afbe78ae55d82ca4bb97dd9196cede70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a046c2373249035324c81144cba28943') in 0.0707514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI Soundpack/MP3/Coffee1.mp3
+  artifactKey: Guid(f4b4731da82ba51449cb57ebf78b882b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Coffee1.mp3 using Guid(f4b4731da82ba51449cb57ebf78b882b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4d0761ec0155aa71450462028e4e8cba') in 0.0798387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI Soundpack/MP3
+  artifactKey: Guid(d1c04751ea18d9648b47da8f9319c0e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3 using Guid(d1c04751ea18d9648b47da8f9319c0e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd27bda9fa9a5c6e9292e28b30f67b1c4') in 0.0299072 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/UI Soundpack/MP3/Modern9.mp3
+  artifactKey: Guid(301a6cd721e282446ba12460365eff6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern9.mp3 using Guid(301a6cd721e282446ba12460365eff6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '515339c72d7d6874bbce897b38dc17ec') in 0.056272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UI Soundpack/WAV/Retro4.wav
+  artifactKey: Guid(2a65aed99ecbdac4daa6bda7f7ce4088) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Retro4.wav using Guid(2a65aed99ecbdac4daa6bda7f7ce4088) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f841626201f7b3f731b61b6ab25fd61b') in 0.0541702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI Soundpack/WAV/Modern15.wav
+  artifactKey: Guid(101f204092fa54e48b66d52b74776e6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern15.wav using Guid(101f204092fa54e48b66d52b74776e6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b957220d8b67bb5007acfb9c98a3cbd6') in 0.0559651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/UI Soundpack/MP3/Modern8.mp3
+  artifactKey: Guid(6176a4a178603e440b5cecc49a5869b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern8.mp3 using Guid(6176a4a178603e440b5cecc49a5869b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f36270597173adca2e6aa6fd91696774') in 0.09151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/UI Soundpack/MP3/Abstract2.mp3
+  artifactKey: Guid(a70a2ba457f3aac47b09c7b29fb8c7a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Abstract2.mp3 using Guid(a70a2ba457f3aac47b09c7b29fb8c7a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '01b5312428921ab91d597528f3a378e2') in 0.0647233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/UI Soundpack/WAV/Modern1.wav
+  artifactKey: Guid(c85d031f8b3e25540a426d4e4a7472c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern1.wav using Guid(c85d031f8b3e25540a426d4e4a7472c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73262bf32ff9f14195df49e95d928acf') in 0.0685949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/UI Soundpack/MP3/Minimalist10.mp3
+  artifactKey: Guid(c945dac2af9f66c4dbf844e74a92d8e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Minimalist10.mp3 using Guid(c945dac2af9f66c4dbf844e74a92d8e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '839b9fef4fb2b2091f8f8be70e69d9ea') in 0.0617818 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/UI Soundpack/WAV/Modern16.wav
+  artifactKey: Guid(158bcd8f1d5db764c878f62c516414e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern16.wav using Guid(158bcd8f1d5db764c878f62c516414e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f44705adad391a03bb43c3f306a7b1c2') in 0.0701843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI Soundpack/WAV/Modern2.wav
+  artifactKey: Guid(261965fc5705a654ab49649ba82bba64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern2.wav using Guid(261965fc5705a654ab49649ba82bba64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '250ec61234ec334bda60e3cea13be49b') in 0.0643777 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/UI Soundpack/MP3/Retro11.mp3
+  artifactKey: Guid(97638e4fd69f648458420eec1724ab33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Retro11.mp3 using Guid(97638e4fd69f648458420eec1724ab33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '98dee053d410376e4f0527398fae0c12') in 0.0765676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/UI Soundpack/MP3/Modern3.mp3
+  artifactKey: Guid(0b7b5b6a0fa2a4048acb58a1c8098a8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern3.mp3 using Guid(0b7b5b6a0fa2a4048acb58a1c8098a8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61122d168cde60d89c4e6024e715ded3') in 0.0712087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/UI Soundpack/MP3/African4.mp3
+  artifactKey: Guid(156d7be9d63eef644933d64e63ed8216) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/African4.mp3 using Guid(156d7be9d63eef644933d64e63ed8216) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ddda1b8295cae21ea2911c0cc9abca7') in 0.0590882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/UI Soundpack/WAV/Modern10.wav
+  artifactKey: Guid(c0814ebc51cb9f743a064ba6a9782644) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Modern10.wav using Guid(c0814ebc51cb9f743a064ba6a9782644) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '580eef5abeac87a74253a1f56db162b6') in 0.0811846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/UI Soundpack/MP3/Retro9.mp3
+  artifactKey: Guid(659e5173a5860dd4cbb480b46231a9f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Retro9.mp3 using Guid(659e5173a5860dd4cbb480b46231a9f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b8357f52cff5c586f949d6f60b6b658d') in 0.0641616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/UI Soundpack/WAV/Retro9.wav
+  artifactKey: Guid(29018c387ef1120438806a6b340b04c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Retro9.wav using Guid(29018c387ef1120438806a6b340b04c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4628d16aeed65ebca9d7d38a26db5fdd') in 0.0750989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI Soundpack/MP3/Retro4.mp3
+  artifactKey: Guid(0da64d99ccd10634d9dd470ac5b8a4d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Retro4.mp3 using Guid(0da64d99ccd10634d9dd470ac5b8a4d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ef345ac292416da5da3cb3010b5e2e85') in 0.0516395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/UI Soundpack/MP3/Wood Block2.mp3
+  artifactKey: Guid(0fc4bac618ee53c47ae9cd62792a30d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Wood Block2.mp3 using Guid(0fc4bac618ee53c47ae9cd62792a30d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '37f61f6a520b2706e2e22b235eeb4c2d') in 0.0535284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI Soundpack/WAV/Retro2.wav
+  artifactKey: Guid(98175d642547df644877f0fd4619b4bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Retro2.wav using Guid(98175d642547df644877f0fd4619b4bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06f315b8f93a1927721296e9480e7228') in 0.0601239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/UI Soundpack/WAV/Coffee2.wav
+  artifactKey: Guid(d0c28bc5c5bddb34bbbed6e62ea5d94d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Coffee2.wav using Guid(d0c28bc5c5bddb34bbbed6e62ea5d94d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a31006328bb6bd7615865948dee17ad') in 0.0720939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI Soundpack/MP3/Minimalist2.mp3
+  artifactKey: Guid(61bace84eaeefcf4db300094c520bc3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Minimalist2.mp3 using Guid(61bace84eaeefcf4db300094c520bc3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '07d4711899f9a1040f9d068a838e91de') in 0.0772493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/UI Soundpack/MP3/Modern15.mp3
+  artifactKey: Guid(42cac24b59f27934fa4cbf163d10762a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Modern15.mp3 using Guid(42cac24b59f27934fa4cbf163d10762a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71739a3c7e540d081d720af0df0d6929') in 0.0579734 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/UI Soundpack/WAV/Minimalist3.wav
+  artifactKey: Guid(8b0c5f90d1daa7f4c9e4b36800f33360) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/Minimalist3.wav using Guid(8b0c5f90d1daa7f4c9e4b36800f33360) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a6504ec0a4f2125ce2a8d31fa7a7cc9') in 0.0942738 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/UI Soundpack/MP3/Minimalist5.mp3
+  artifactKey: Guid(4cc29975311436d479c3dffd47ea15be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Minimalist5.mp3 using Guid(4cc29975311436d479c3dffd47ea15be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ea4a33ff7e21d166813f677d94f0d018') in 0.0743024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/UI Soundpack/MP3/Minimalist3.mp3
+  artifactKey: Guid(8bde8c35aa998064d8cfa60ee7137eba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Minimalist3.mp3 using Guid(8bde8c35aa998064d8cfa60ee7137eba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '446567332bfc67453e7c76bab1c8222b') in 0.0869599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI Soundpack/MP3/Wood Block1.mp3
+  artifactKey: Guid(80721227073f0cf4497b42ead9687c56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/MP3/Wood Block1.mp3 using Guid(80721227073f0cf4497b42ead9687c56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f394652f0a0e58b1551409ee178a37a8') in 0.0722214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI Soundpack/WAV/African4.wav
+  artifactKey: Guid(40f9c6bf9f852a14ab5aa49b1f3bfc9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI Soundpack/WAV/African4.wav using Guid(40f9c6bf9f852a14ab5aa49b1f3bfc9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'afa14bbb7aab3c531d397257ee19d3b7') in 0.0700167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
