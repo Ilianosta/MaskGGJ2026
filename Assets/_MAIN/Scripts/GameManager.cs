@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject firstScene, interrogatory;
     public Timer firstSceneTimer;
     public JudgeManager judgeManager;
+
+    [SerializeField] RawImage selector;
 
     public delegate void OnGameStart();
     public OnGameStart onGameStart;
@@ -26,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        selector.enabled = false;
         firstSceneTimer.onTimerEnd += OnFirstSceneTimerEnd;
         DialogueManager.onFinishDialogue += () =>
         {
@@ -36,7 +40,7 @@ public class GameManager : MonoBehaviour
             firstSceneTimer.EnableTimer();
             UIManager.instance.ShowBlackScreen(false);
         };
-
+        
         DialogueManager.instance.StartDialogue();
     }
 
@@ -51,6 +55,7 @@ public class GameManager : MonoBehaviour
         firstScene.SetActive(false);
         interrogatory.SetActive(true);
         firstSceneTimer.DisableTimer();
+        selector.enabled = true;
         UIManager.instance.ShowInterrogatory(true);
     }
 
@@ -58,6 +63,7 @@ public class GameManager : MonoBehaviour
     {
 
         Debug.Log("GAME OVER WACHO JAJAAAAA");
+        
         UIManager.instance.onFinish = true;
         UIManager.instance.ShowInterrogatory(false);
     }

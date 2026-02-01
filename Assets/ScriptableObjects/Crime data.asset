@@ -91,6 +91,7 @@ MonoBehaviour:
     - label: Mostrarle el papel con los numeros de la caja fuerte
       correctPercentage: 25
       answer:
-      - '                                                                                       
-        Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que si no
-        lo hacia llamaria a mi oficial de libertad condicional! no tuve as opcion.'
+      - '                                                                                      
+        <br>Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que
+        si no lo hacia llamaria a mi oficial de libertad condicional! no tuve ninguna
+        opcion.'

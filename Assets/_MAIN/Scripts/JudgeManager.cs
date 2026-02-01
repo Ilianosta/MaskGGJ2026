@@ -21,6 +21,7 @@ public class JudgeManager : MonoBehaviour
     [SerializeField] Vector2 scale;
     [SerializeField] CameraShake2D cameraShake2D;
     [SerializeField] UIShake uIShake;
+    private Coroutine suspensiveEnd;
 
     // HELPERS
     LevelData CurrentCrime => crimes[currentCrimeIndex];
@@ -87,7 +88,7 @@ public class JudgeManager : MonoBehaviour
         if (currentCrimeQuestion == 3)
         {
             Debug.Log("Final Alcansado");
-            StartCoroutine(suspensiveEnd());
+            suspensiveEnd = StartCoroutine(SuspensiveEnd());
         }
         else
         {
@@ -104,15 +105,17 @@ public class JudgeManager : MonoBehaviour
         Debug.Log("INCORRECTO");
     }
     
-    IEnumerator suspensiveEnd()
+    IEnumerator SuspensiveEnd()
     {
         yield return new WaitForSeconds(2f);
         audioManager.PlaySFX(audioManager.fullBreakSFX);
         currentSuspectState++;
         LevelData crime = crimes[currentCrimeIndex];
         UIManager.instance.ShowJudgePanel(crime.crimeOptions[currentCrimeQuestion], crime.suspectImg[currentSuspectState]);
-        yield return new WaitForSeconds(2f);
+        
         GoNextQuestion();
+        yield return new WaitForSeconds(5f);
+        UIManager.instance.ShowEndScreen();
     }
 
 }

@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] UI_BarFiller suspectBar;
     [SerializeField] Q_Vignette_Single vignette;
     [SerializeField] Image blackScreen;
+    [SerializeField] GameObject finalCosa;
     public delegate void OnAnswerSelected(int index);
     public OnAnswerSelected onAnswerSelected;
     public bool onFinish = false;
@@ -96,5 +97,10 @@ public class UIManager : MonoBehaviour
         {
             blackScreen.CrossFadeAlpha(0, .25f, true);
         }
+    }
+
+    public void ShowEndScreen()
+    {
+        finalCosa.SetActive(true);
     }
 }
