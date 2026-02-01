@@ -1582,3 +1582,11 @@ Received Import Request.
 Start importing Assets/ScriptableObjects/Crime data.asset using Guid(da0f844c304c87d4a89bb5b81c3d585e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5f973b45c34e5e12c95bbd85b3f5cc2') in 1.7186299 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
+========================================================================
+Received Import Request.
+  Time since last request: 3799.094161 seconds.
+  path: Assets/ScriptableObjects/Crime data.asset
+  artifactKey: Guid(da0f844c304c87d4a89bb5b81c3d585e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Crime data.asset using Guid(da0f844c304c87d4a89bb5b81c3d585e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd90e65c4806c18d818a90f808004c02b') in 0.2367803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+

@@ -33,54 +33,54 @@ MonoBehaviour:
       correctPercentage: 0
       answer:
       - No es el mejor trabajo, pero es algo
-    - label: Estas calvo
+    - label: Porque contratarian a un ex ladron
       correctPercentage: 0
       answer:
-      - Y tu tambien lo estaras
+      - No se, tuve suerte supongo
   - options:
     - label: Boca o River?
       correctPercentage: 0
       answer:
       - Racing
-    - label: Que sabes de GTA 6?
+    - label: Se frota mucho las manos
       correctPercentage: 0
       answer:
-      - "Se volvio a retrasar para el a\xF1o proximo"
+      - Es que tengo frio
     - label: "Se\xF1alar que es zurdo y que el numero de personas zurdas con antecedentes
         son pocas"
       correctPercentage: 25
       answer:
       - 'Emm si bueno, se que todo suena conveniente, pero son solo coincidencias,
         no puedo ser el unico ladron cojo en el mundo jeje '
-    - label: Viejo
+    - label: Hace cuanto trabaja alli?
       correctPercentage: 0
       answer:
-      - Joven
+      - "un a\xF1o y tres meses"
   - options:
-    - label: "Se\xF1alar su pierna protesica lo molestara"
+    - label: "Se\xF1alar su pierna protesica"
       correctPercentage: 25
       answer:
       - 'Oigame, usted cree que puede llevarme aqui y empezar a decir eso bajo una
         suposicion!? '
       - 'Dios yo solo...eso no...no fue '
-    - label: Te gusta la Coca-Cola?
+    - label: Como perdio su pierna?
       correctPercentage: 0
       answer:
-      - Prefiero Pepesi
+      - Un accidente, no quiero hablar de ello
     - label: "Que opinas de la JAM de este a\xF1o?"
       correctPercentage: 0
       answer:
       - Que es la mejor
-    - label: Conoces a algun plomero?
+    - label: Sale mucho afuera?
       correctPercentage: 0
       answer:
-      - Si, mi primo Mario es el mejor
+      - Si, Debo limpiar la nieve de afuera
   - options:
-    - label: Cuando sale Silksong?
+    - label: Como sabias el codigo del cuadro?
       correctPercentage: 0
       answer:
-      - Ya salio, ese chiste ya no sirve
-    - label: Te gusta el Ques?
+      - emm...presione mis numeros de la suerte
+    - label: Te gusta el Queso?
       correctPercentage: 0
       answer:
       - Si, tiene olor a patas
