@@ -20,35 +20,41 @@ MonoBehaviour:
   - {fileID: 7192380071919715910, guid: 71401afb078bf9643bb1dd9cabb43e61, type: 3}
   crimeOptions:
   - options:
-    - label: Incorrecto
+    - label: Cuando va a salir Half Life 3?
       correctPercentage: 0
-      answer: []
+      answer:
+      - En el 3026
     - label: "Mencionar los a\xF1os de prision que se le daran "
       correctPercentage: 25
       answer:
       - 'Yo le juro que cambie, ya no soy ladron, no desde que perdi mi pierna '
-    - label: Incorrecto
+    - label: Eres conserje?
       correctPercentage: 0
-      answer: []
-    - label: Incorrecto
+      answer:
+      - No es el mejor trabajo, pero es algo
+    - label: Estas calvo
       correctPercentage: 0
-      answer: []
+      answer:
+      - Y tu tambien lo estaras
   - options:
-    - label: Incorrecto
+    - label: Boca o River?
       correctPercentage: 0
-      answer: []
-    - label: Incorrecto
+      answer:
+      - Racing
+    - label: Que sabes de GTA 6?
       correctPercentage: 0
-      answer: []
+      answer:
+      - "Se volvio a retrasar para el a\xF1o proximo"
     - label: "Se\xF1alar que es zurdo y que el numero de personas zurdas con antecedentes
         son pocas"
       correctPercentage: 25
       answer:
       - 'Emm si bueno, se que todo suena conveniente, pero son solo coincidencias,
         no puedo ser el unico ladron cojo en el mundo jeje '
-    - label: Incorrecto
+    - label: Viejo
       correctPercentage: 0
-      answer: []
+      answer:
+      - Joven
   - options:
     - label: "Se\xF1alar su pierna protesica lo molestara"
       correctPercentage: 25
@@ -56,28 +62,33 @@ MonoBehaviour:
       - 'Oigame, usted cree que puede llevarme aqui y empezar a decir eso bajo una
         suposicion!? '
       - 'Dios yo solo...eso no...no fue '
-    - label: Incorrecto
+    - label: Te gusta la Coca-Cola?
       correctPercentage: 0
-      answer: []
-    - label: Incorrecto
+      answer:
+      - Prefiero Pepesi
+    - label: "Que opinas de la JAM de este a\xF1o?"
       correctPercentage: 0
-      answer: []
-    - label: Incorrecto
+      answer:
+      - Que es la mejor
+    - label: Conoces a algun plomero?
       correctPercentage: 0
-      answer: []
+      answer:
+      - Si, mi primo Mario es el mejor
   - options:
-    - label: Incorrecto
+    - label: Cuando sale Silksong?
       correctPercentage: 0
-      answer: []
-    - label: Incorrecto
+      answer:
+      - Ya salio, ese chiste ya no sirve
+    - label: Te gusta el Ques?
       correctPercentage: 0
-      answer: []
-    - label: Incorrecto
+      answer:
+      - Si, tiene olor a patas
+    - label: Planeaste todo o tienes un complice?
       correctPercentage: 0
-      answer: []
+      answer:
+      - ...no?
     - label: Mostrarle el papel con los numeros de la caja fuerte
       correctPercentage: 25
       answer:
-      - 'Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que si
-        no lo hacia llamaria a mi oficial de libertad condicional! no tuve as opcion
-        *solloza* '
+      - Lo confieso, fui yo, yo lo robe! No queria pero me obligo,  Dijo que si no
+        lo hacia llamaria a mi oficial de libertad condicional! no tuve as opcion.

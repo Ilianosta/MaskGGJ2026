@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+
         Debug.Log("GAME OVER WACHO JAJAAAAA");
         UIManager.instance.onFinish = true;
         UIManager.instance.ShowInterrogatory(false);
