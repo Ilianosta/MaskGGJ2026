@@ -110,6 +110,7 @@ public class JudgeManager : MonoBehaviour
     IEnumerator SuspensiveEnd()
     {
         yield return new WaitForSeconds(2f);
+        UIManager.instance.ShowInterrogatory(false);
         audioManager.PlaySFX(audioManager.fullBreakSFX);
         maskParticles.Play();
         currentSuspectState++;

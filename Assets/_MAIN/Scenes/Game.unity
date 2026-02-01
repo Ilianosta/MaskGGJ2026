@@ -13396,6 +13396,7 @@ MonoBehaviour:
   scale: {x: 0.9, y: 1}
   cameraShake2D: {fileID: 519420033}
   uIShake: {fileID: 181513427}
+  maskParticles: {fileID: 607479297}
 --- !u!4 &2092316713
 Transform:
   m_ObjectHideFlags: 0
