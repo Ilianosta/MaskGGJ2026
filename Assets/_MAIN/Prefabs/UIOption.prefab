@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5417936438484544525}
   - component: {fileID: 6487251717707981496}
   - component: {fileID: 2215383119077196582}
+  - component: {fileID: 1010639134689286080}
   m_Layer: 5
   m_Name: UIOption
   m_TagString: Untagged
@@ -121,6 +122,23 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1010639134689286080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307476301206263186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220293b8e4624ee46aed5e1d09324535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceDetector
+  selector: {fileID: 0}
+  referenceObject1: {fileID: 7746715797450279401}
+  test: {fileID: 0}
+  timerChoiceTotal: 150
+  timerCurrentTime: 0
 --- !u!1 &3638149922538645522
 GameObject:
   m_ObjectHideFlags: 0

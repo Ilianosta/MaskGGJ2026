@@ -11,6 +11,9 @@ public class DialogueManager : MonoBehaviour
     int currentDialogueIndex = 0;
     InputSystem_Actions inputActions;
 
+    private bool continueDialogue = false;
+    private Coroutine clickCoroutine;
+    private Coroutine timeCoroutine;
 
     public delegate void OnStartDialogue();
     public static OnStartDialogue onStartDialogue;
@@ -61,21 +64,43 @@ public class DialogueManager : MonoBehaviour
                 UIManager.instance.SetDialogueText(tempTxt);
                 if (!inputActions.Player.Attack.IsPressed())
                 {
-                    Debug.Log("Not skipping");
+                    
+                    //Debug.Log("Not skipping");
                     yield return new WaitForSeconds(timeAnimationChar);
                 }
                 else
                 {
-                    Debug.Log("Skipping");
+                    //Debug.Log("Skipping");
+                    
                 }
             }
-
-            yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
+            clickCoroutine = StartCoroutine(WaitForPlayerDecisionDialogueInput());
+            timeCoroutine = StartCoroutine(WaitForPlayerDecisionDialogueTimer());
+            yield return new WaitUntil(() => continueDialogue);
+            continueDialogue = false;
         }
         ResetDialogue();
         UIManager.instance.CloseDialoguePanel();
         onFinishDialogue?.Invoke();
     }
+
+    IEnumerator WaitForPlayerDecisionDialogueInput()
+    {
+        Debug.Log("Waiting for click");
+        yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
+        StopCoroutine(timeCoroutine);
+        Debug.Log("Click engaged, removing timer");
+        continueDialogue = true;
+    }
+    IEnumerator WaitForPlayerDecisionDialogueTimer()
+    {
+        Debug.Log("Starting timer");
+        yield return new WaitForSeconds(5f);
+        StopCoroutine(clickCoroutine);
+        Debug.Log("Timer ended, removing click detection");
+        continueDialogue = true;
+    }
+
 
     IEnumerator StartDialogueAnimation(string[] dialogues)
     {

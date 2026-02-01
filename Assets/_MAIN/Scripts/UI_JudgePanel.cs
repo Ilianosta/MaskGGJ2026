@@ -8,6 +8,7 @@ public class UI_JudgePanel : MonoBehaviour
     [SerializeField] TMP_Text questionText;
     [SerializeField] TMP_Text[] options;
     [SerializeField] Button[] buttons;
+    [SerializeField] ChoiceDetector[] choiceDetectors;
     public void FillPanel(CrimeOptions crime, Sprite suspect)
     {
         ResetPanel();
@@ -23,6 +24,7 @@ public class UI_JudgePanel : MonoBehaviour
                 // Debug.Log("Clicking btn: " + actualIndex);
                 UIManager.instance.onAnswerSelected?.Invoke(actualIndex);
             });
+            choiceDetectors[i].actualIndex = actualIndex;
         }
     }
 
