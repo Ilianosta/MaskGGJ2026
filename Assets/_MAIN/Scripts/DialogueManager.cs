@@ -40,17 +40,16 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue()
     {
         StartCoroutine(StartDialogueAnimation(dialogues[currentDialogueIndex]));
-        onStartDialogue?.Invoke();
     }
 
     public void StartDialogue(string[] dialogues)
     {
         StartCoroutine(StartDialogueAnimation(dialogues));
-        onStartDialogue?.Invoke();
     }
 
     IEnumerator StartDialogueAnimation(DialogueData dialogueData)
     {
+        onStartDialogue?.Invoke();
         UIManager.instance.OpenDialoguePanel();
         foreach (string dialogue in dialogueData.dialogues)
         {
@@ -73,13 +72,14 @@ public class DialogueManager : MonoBehaviour
 
             yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
         }
-        onFinishDialogue?.Invoke();
         ResetDialogue();
         UIManager.instance.CloseDialoguePanel();
+        onFinishDialogue?.Invoke();
     }
 
     IEnumerator StartDialogueAnimation(string[] dialogues)
     {
+        onStartDialogue?.Invoke();
         UIManager.instance.OpenDialoguePanel();
         foreach (string dialogue in dialogues)
         {
@@ -102,9 +102,9 @@ public class DialogueManager : MonoBehaviour
 
             yield return new WaitUntil(() => inputActions.Player.Attack.triggered);
         }
-        onFinishDialogue?.Invoke();
         ResetDialogue();
         UIManager.instance.CloseDialoguePanel();
+        onFinishDialogue?.Invoke();
     }
 
     void ResetDialogue()

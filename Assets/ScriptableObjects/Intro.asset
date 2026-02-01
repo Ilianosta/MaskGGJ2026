@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2588e3e12df4d9a4d90c3d2d39c7c355, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogues:
+  - Eres un detective novato recien llegado a la ciudad Umbra,
+  - una ciudad bastante deprimente de clima helado, se te asigno un caso reciente
+    y complicado; el robo de la pintura del gaucho
+  - 'El jefe fue claro: resuelvelo y te quedas, o largate.'
+  - Investigando las pistas del museo me llevo a un ladron llamado Smithers
+  - "Smithers Antecedentes:  Robo y allanamiento de morada, fue condenado de 2 a
+    3 a\xF1os de prision, salio hace poco bajo libertad condicional se sospecha que
+    el robo la pintura del museo, es zurdo, le falta la pierna derecha por un accidente
+    del pasado El conocia bastante bien la estructura del museo y sabia como evitar
+    a los guardias y las camaras ademas de conocer el codigo de la caja fuerte, alguien
+    lo ayudo "
+  - Investiga y recuerda cada detalle de la escena del crimen...

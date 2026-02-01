@@ -7,6 +7,7 @@ public class UI_JudgePanel : MonoBehaviour
     [SerializeField] SpriteRenderer suspectImg;
     [SerializeField] TMP_Text questionText;
     [SerializeField] TMP_Text[] options;
+    [SerializeField] Button[] buttons;
     public void FillPanel(CrimeOptions crime, Sprite suspect)
     {
         ResetPanel();
@@ -16,15 +17,13 @@ public class UI_JudgePanel : MonoBehaviour
         for (int i = 0; i < options.Length; i++)
         {
             options[i].text = crime.options[i].label;
-
-            Button optionsButton = options[i].GetComponentInParent<Button>();
             int actualIndex = i;
-
-            optionsButton.onClick.AddListener(() =>
+            buttons[i].onClick.AddListener(() =>
             {
                 // Debug.Log("Clicking btn: " + actualIndex);
                 UIManager.instance.onAnswerSelected?.Invoke(actualIndex);
             });
+            buttons[i].GetComponent<ChoiceDetector>().index = actualIndex;
         }
     }
 
@@ -33,11 +32,7 @@ public class UI_JudgePanel : MonoBehaviour
         for (int i = 0; i < options.Length; i++)
         {
             options[i].text = "";
-
-            Button optionsButton = options[i].GetComponentInParent<Button>();
-            int actualIndex = i;
-
-            optionsButton.onClick.RemoveAllListeners();
+            buttons[i].onClick.RemoveAllListeners();
         }
     }
 }

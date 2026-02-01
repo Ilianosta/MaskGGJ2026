@@ -1,19 +1,22 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
+    [SerializeField] GameObject interrogatory;
     [SerializeField] UI_JudgePanel judgePanel;
     [SerializeField] GameObject dialoguePanel;
     [SerializeField] TMP_Text dialogueTxt;
     [SerializeField] UI_BarFiller suspectBar;
     [SerializeField] Q_Vignette_Single vignette;
+    [SerializeField] Image blackScreen;
     public delegate void OnAnswerSelected(int index);
     public OnAnswerSelected onAnswerSelected;
-
+    public bool onFinish = false;
     void Awake()
     {
         if (UIManager.instance != null) Destroy(gameObject);
@@ -22,9 +25,20 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         suspectBar.SetCurrentValue(0);
+    }
 
-        DialogueManager.onStartDialogue += () => CloseJudgePanel();
-        DialogueManager.onFinishDialogue += () => OpenJudgePanel();
+    void Start()
+    {
+        DialogueManager.onStartDialogue += () =>
+        {
+            if (GameManager.instance.gameStarted) ShowInterrogatory(false);
+        };
+
+        DialogueManager.onFinishDialogue += () =>
+        {
+            if (GameManager.instance.gameStarted && !onFinish) ShowInterrogatory(true);
+        };
+        ShowInterrogatory(false);
     }
 
     public void ShowJudgePanel(CrimeOptions crime, Sprite suspect) => judgePanel.FillPanel(crime, suspect);
@@ -65,5 +79,22 @@ public class UIManager : MonoBehaviour
     public void CloseJudgePanel()
     {
         judgePanel.gameObject.SetActive(false);
+    }
+
+    public void ShowInterrogatory(bool show)
+    {
+        interrogatory.SetActive(show);
+    }
+
+    public void ShowBlackScreen(bool show)
+    {
+        if (show)
+        {
+            blackScreen.CrossFadeAlpha(255, .25f, true);
+        }
+        else
+        {
+            blackScreen.CrossFadeAlpha(0, .25f, true);
+        }
     }
 }

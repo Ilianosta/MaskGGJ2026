@@ -5,10 +5,10 @@ using UnityEngine.UIElements;
 
 public class ChoiceDetector : MonoBehaviour
 {
-    public RectTransform selector;
-    public RectTransform referenceObject1;
-    [SerializeField] private GameObject test;
+    [SerializeField] private RectTransform selector;
+    [SerializeField] private RectTransform referenceObject1;
     
+    public int index;
 
     [SerializeField] private float timerChoiceTotal;
     [SerializeField] private float timerCurrentTime;
@@ -21,8 +21,8 @@ public class ChoiceDetector : MonoBehaviour
         if (rectA.Overlaps(rectB))
         {
             if (timerCurrentTime >= timerChoiceTotal)
-            {
-                test.SetActive(true);
+            {   
+                UIManager.instance.onAnswerSelected?.Invoke(index);
                 timerCurrentTime = 0;
             }
             else
@@ -31,7 +31,8 @@ public class ChoiceDetector : MonoBehaviour
         else if (timerCurrentTime >= 0)
             timerCurrentTime--;
     }
-
+    public void SetIndex(int index)
+        { this.index = index; }
     private Rect GetWorldRect(RectTransform rt)
     {
         Vector3[] corners = new Vector3[4];
