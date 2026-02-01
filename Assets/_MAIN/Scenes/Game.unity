@@ -11006,6 +11006,7 @@ GameObject:
   - component: {fileID: 824591407}
   - component: {fileID: 824591406}
   - component: {fileID: 824591405}
+  - component: {fileID: 824591408}
   m_Layer: 0
   m_Name: btnPlay
   m_TagString: Untagged
@@ -11075,7 +11076,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 824591406}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 932308917}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 470315723}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &824591406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11114,6 +11139,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824591403}
   m_CullTransparentMesh: 1
+--- !u!114 &824591408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824591403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003e333414937964e8de21bf69a51508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BotonPlay
+  selector: {fileID: 1524486478}
+  referenceObject1: {fileID: 824591404}
+  mainMenu: {fileID: 470315723}
+  gameMenu: {fileID: 932308917}
+  timerChoiceTotal: 150
+  timerCurrentTime: 0
 --- !u!1 &852966291
 GameObject:
   m_ObjectHideFlags: 0
@@ -11391,7 +11434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &932308918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11688,8 +11731,8 @@ RectTransform:
   - {fileID: 1632719804}
   - {fileID: 1671684966}
   - {fileID: 181513426}
-  - {fileID: 1524486478}
   - {fileID: 470315725}
+  - {fileID: 1524486478}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13068,6 +13111,10 @@ PrefabInstance:
     - target: {fileID: 6590202359713900569, guid: 625ce991877d7a04e97da944046ac258, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019088217378277192, guid: 625ce991877d7a04e97da944046ac258, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
