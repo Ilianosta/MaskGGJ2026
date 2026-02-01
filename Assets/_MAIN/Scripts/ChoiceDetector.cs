@@ -12,9 +12,7 @@ public class ChoiceDetector : MonoBehaviour
     [SerializeField] private float timerChoiceTotal;
     [SerializeField] private float timerCurrentTime;
 
-    private void Awake()
-    {
-    }
+    [SerializeField] CursorEffect cursor;
 
     private void Update()
     {
@@ -23,17 +21,21 @@ public class ChoiceDetector : MonoBehaviour
 
         if (rectA.Overlaps(rectB))
         {
+            cursor.AnimateIn();
             if (timerCurrentTime >= timerChoiceTotal)
             {
                 UIManager.instance.onAnswerSelected?.Invoke(actualIndex);
                 timerCurrentTime = 0;
-                
+
             }
             else
                 timerCurrentTime++;
         }
         else if (timerCurrentTime >= 0)
+        {
             timerCurrentTime--;
+            cursor.AnimateOut();
+        }
     }
 
     private Rect GetWorldRect(RectTransform rt)

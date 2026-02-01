@@ -21,6 +21,7 @@ public class JudgeManager : MonoBehaviour
     [SerializeField] Vector2 scale;
     [SerializeField] CameraShake2D cameraShake2D;
     [SerializeField] UIShake uIShake;
+    [SerializeField] ParticleSystem maskParticles;
     private Coroutine suspensiveEnd;
 
     // HELPERS
@@ -85,6 +86,7 @@ public class JudgeManager : MonoBehaviour
         LeanTween.scaleX(imgSuspect, scale.x, durationX).setEase(ease).setLoopPingPong(1);
         LeanTween.scaleY(imgSuspect, scale.y, durationY).setEase(ease).setLoopPingPong(1);
         UIManager.instance.AnimateVignette();
+        maskParticles.Play();
         if (currentCrimeQuestion == 3)
         {
             Debug.Log("Final Alcansado");
@@ -95,7 +97,7 @@ public class JudgeManager : MonoBehaviour
             GoNextQuestion();
             Debug.Log("CORRECTO");
         }
-            
+
     }
     [ContextMenu("AnimWrongAnswer")]
     void OnReceiveWrongAnswer()
@@ -104,15 +106,17 @@ public class JudgeManager : MonoBehaviour
         LeanTween.scale(imgSuspect, scale * 1.15f, 2).setEase(curveAnimWrongAnswer);
         Debug.Log("INCORRECTO");
     }
-    
+
     IEnumerator SuspensiveEnd()
     {
         yield return new WaitForSeconds(2f);
+        UIManager.instance.ShowInterrogatory(false);
         audioManager.PlaySFX(audioManager.fullBreakSFX);
+        maskParticles.Play();
         currentSuspectState++;
         LevelData crime = crimes[currentCrimeIndex];
         UIManager.instance.ShowJudgePanel(crime.crimeOptions[currentCrimeQuestion], crime.suspectImg[currentSuspectState]);
-        
+
         GoNextQuestion();
         yield return new WaitForSeconds(5f);
         UIManager.instance.ShowEndScreen();

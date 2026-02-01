@@ -1431,9 +1431,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 944.503, y: 536.0783, z: -6.201237}
+    m_Target: {x: -1.2931342, y: 0.638213, z: -0.0044413605}
     speed: 2
-    m_Value: {x: 859.30615, y: 478.5377, z: -5.929893}
+    m_Value: {x: 944.503, y: 536.0783, z: -6.201237}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1483,9 +1483,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 630.1261
+    m_Target: 1.3101572
     speed: 2
-    m_Value: 602.99146
+    m_Value: 630.1261
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1891,30 +1891,23 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49472
-    - m_Data: 49474
-    - m_Data: 49476
-    - m_Data: 51552
-    - m_Data: 51554
-    - m_Data: 51556
-    - m_Data: 51558
-    - m_Data: 51560
-    - m_Data: 51562
-    - m_Data: 51564
-    - m_Data: 51566
-    - m_Data: 51568
-    - m_Data: 51570
-    - m_Data: 51572
-    - m_Data: 51574
-    - m_Data: 51576
-    - m_Data: 51578
-    - m_Data: 51580
-    - m_Data: 51582
-    - m_Data: 51584
-    - m_Data: 51586
-    - m_Data: 51588
-    - m_Data: 51590
-    - m_Data: 51592
+    - m_Data: 616
+    - m_Data: 52728
+    - m_Data: 52730
+    - m_Data: 52732
+    - m_Data: 52734
+    - m_Data: 52736
+    - m_Data: 52738
+    - m_Data: 52740
+    - m_Data: 52742
+    - m_Data: 52744
+    - m_Data: 52746
+    - m_Data: 52748
+    - m_Data: 52750
+    - m_Data: 52752
+    - m_Data: 52754
+    - m_Data: 52756
+    - m_Data: 52758
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1948,30 +1941,23 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49472
-    - m_Data: 49474
-    - m_Data: 49476
-    - m_Data: 51552
-    - m_Data: 51554
-    - m_Data: 51556
-    - m_Data: 51558
-    - m_Data: 51560
-    - m_Data: 51562
-    - m_Data: 51564
-    - m_Data: 51566
-    - m_Data: 51568
-    - m_Data: 51570
-    - m_Data: 51572
-    - m_Data: 51574
-    - m_Data: 51576
-    - m_Data: 51578
-    - m_Data: 51580
-    - m_Data: 51582
-    - m_Data: 51584
-    - m_Data: 51586
-    - m_Data: 51588
-    - m_Data: 51590
-    - m_Data: 51592
+    - m_Data: 616
+    - m_Data: 52728
+    - m_Data: 52730
+    - m_Data: 52732
+    - m_Data: 52734
+    - m_Data: 52736
+    - m_Data: 52738
+    - m_Data: 52740
+    - m_Data: 52742
+    - m_Data: 52744
+    - m_Data: 52746
+    - m_Data: 52748
+    - m_Data: 52750
+    - m_Data: 52752
+    - m_Data: 52754
+    - m_Data: 52756
+    - m_Data: 52758
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

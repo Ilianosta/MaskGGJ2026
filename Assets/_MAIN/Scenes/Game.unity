@@ -11821,7 +11821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc268ac7177996b429ee6f99b234a310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer
-  maxTime: 10
+  maxTime: 30
 --- !u!1 &1006545716
 GameObject:
   m_ObjectHideFlags: 0
@@ -12424,6 +12424,7 @@ GameObject:
   - component: {fileID: 1524486478}
   - component: {fileID: 1524486480}
   - component: {fileID: 1524486479}
+  - component: {fileID: 1524486481}
   m_Layer: 5
   m_Name: Selector
   m_TagString: Untagged
@@ -12485,6 +12486,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524486477}
   m_CullTransparentMesh: 1
+--- !u!114 &1524486481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524486477}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae20ebdadd613342887b307a18318c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorEffect
+  duration: 0.3
+  easing: 0
+  scale: {x: 1.3, y: 1.3}
 --- !u!1 &1555382236
 GameObject:
   m_ObjectHideFlags: 0
@@ -12909,9 +12925,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1381751427}
     m_Modifications:
     - target: {fileID: 956353098173694321, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 1524486481}
+    - target: {fileID: 956353098173694321, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
       propertyPath: selector
       value: 
       objectReference: {fileID: 1524486478}
+    - target: {fileID: 1771682964656495368, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 1524486481}
     - target: {fileID: 1771682964656495368, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
       propertyPath: selector
       value: 
@@ -12940,6 +12964,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 258.15
       objectReference: {fileID: 0}
+    - target: {fileID: 2246527241899856951, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 1524486481}
     - target: {fileID: 2246527241899856951, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
       propertyPath: selector
       value: 
@@ -13096,6 +13124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JudgePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8675181786682650351, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 1524486481}
     - target: {fileID: 8675181786682650351, guid: 18cf486fe728c584c90d46323c9e2557, type: 3}
       propertyPath: selector
       value: 
@@ -13364,6 +13396,7 @@ MonoBehaviour:
   scale: {x: 0.9, y: 1}
   cameraShake2D: {fileID: 519420033}
   uIShake: {fileID: 181513427}
+  maskParticles: {fileID: 607479297}
 --- !u!4 &2092316713
 Transform:
   m_ObjectHideFlags: 0
