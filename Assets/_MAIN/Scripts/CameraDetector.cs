@@ -10,8 +10,8 @@ public class CameraDetector : MonoBehaviour
     [SerializeField] private GameObject instructorCameraOff;
     private void Awake()
     {
-        devices = WebCamTexture.devices;
-        StartCoroutine(maskDialogue());
+        //devices = WebCamTexture.devices;
+        //StartCoroutine(maskDialogue());
     }
 
 
